@@ -1,0 +1,29 @@
+@import '../styles/theme.css';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--c07070A);
+  color: var(--cEDEDEF);
+  font-family: var(--font-sans), Inter, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Dark/light icon swap without a hydration mismatch. */
+.only-dark,
+.only-light {
+  display: contents;
+}
+html.light .only-dark,
+html:not(.light) .only-light {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
