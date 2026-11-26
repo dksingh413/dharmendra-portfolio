@@ -6,9 +6,8 @@ const profile = {
   email: 'dksinghmern@gmail.com',
   linkedin: 'https://www.linkedin.com/in/dksingh413',
   // Digits only, with country code, e.g. '919876543210'.
-  whatsappNumber: '',
-  // e.g. 'https://github.com/your-username'
-  github: '',
+  whatsappNumber: '918459916846',
+  github: 'https://github.com/dksingh413',
   // e.g. 'https://www.naukri.com/mnjuser/profile?id=...'
   naukri: '',
   // Put the PDF in /public (e.g. /Dharmendra-Kumar-Singh-CV.pdf) and set its path here.
