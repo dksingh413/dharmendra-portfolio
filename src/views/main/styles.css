@@ -824,7 +824,8 @@
 .pg-main .ctachans .cch:active{background:var(--c17171D) !important}
 .light .pg-main .ctachans{box-shadow:0 20px 50px rgba(20,20,40,.10)}
 .pg-main .foot .fcol:last-child{display:none !important}
-.pg-main section[aria-label="Meet the engineer"]{padding-top:4px !important}
+.pg-main section[aria-label="Meet the engineer"]:not(#x){padding-top:0 !important}
+.pg-main #top{padding-bottom:20px !important}
 .pg-main .cta:active,.pg-main .ctab:active,.pg-main .cotab:active,.pg-main .mprofile:active{transform:scale(.97)}}
 @supports (animation-timeline: view()){@media (max-width:760px) and (prefers-reduced-motion:no-preference){.pg-main section:not(#top) .w > *,.pg-main .stair,.pg-main .nstep,.pg-main .airow,.pg-main .cch,.pg-main .lapcard{animation:pg-main-mreveal linear both !important;animation-timeline:view() !important;animation-range:entry 0% cover 22% !important}
 @keyframes pg-main-mreveal{from{opacity:0;transform:translateY(26px) scale(.98)}to{opacity:1;transform:none}}}}
