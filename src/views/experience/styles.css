@@ -43,8 +43,7 @@
 .pg-experience .h1{font-size:48px !important}
 .pg-experience .h2{font-size:36px}}
 @media (prefers-reduced-motion:reduce){.pg-experience .up,.pg-experience .ring{animation:none;opacity:1}}
-.pg-experience /* shared site shell */
-.light [style*="; color: #4ADE80"],.light .pg-experience [style^="color: #4ADE80"],.light .pg-experience [style*="; color: #F5C451"],.light .pg-experience [style^="color: #F5C451"],.light .pg-experience [style*="; color: #38BDF8"],.light .pg-experience [style^="color: #38BDF8"],.light .pg-experience [style*="; color: #FBBF77"],.light .pg-experience [style^="color: #FBBF77"],.light .pg-experience [style*="; color: #FDBA74"],.light .pg-experience [style^="color: #FDBA74"],.light .pg-experience [style*="; color: #F472B6"],.light .pg-experience [style^="color: #F472B6"],.light .pg-experience [style*="; color: #A78BFA"],.light .pg-experience [style^="color: #A78BFA"],.light .pg-experience [style*="; color: #22D3EE"],.light .pg-experience [style^="color: #22D3EE"],.light .pg-experience [style*="; color: #FACC15"],.light .pg-experience [style^="color: #FACC15"],.light .pg-experience [style*="; color: #86EFAC"],.light .pg-experience [style^="color: #86EFAC"],.light .pg-experience [style*="; color: #7DD3FC"],.light .pg-experience [style^="color: #7DD3FC"],.light .pg-experience [style*="; color: #C084FC"],.light .pg-experience [style^="color: #C084FC"],.light .pg-experience [style*="; color: #FB923C"],.light .pg-experience [style^="color: #FB923C"],.light .pg-experience [style*="; color: #93C5FD"],.light .pg-experience [style^="color: #93C5FD"],.light .pg-experience [style*="; color: #F87171"],.light .pg-experience [style^="color: #F87171"],.light .pg-experience [style*="; color: #34D399"],.light .pg-experience [style^="color: #34D399"]{filter:brightness(.6) saturate(1.5)}
+.light .pg-experience [style*="; color: #4ADE80"],.light .pg-experience [style^="color: #4ADE80"],.light .pg-experience [style*="; color: #F5C451"],.light .pg-experience [style^="color: #F5C451"],.light .pg-experience [style*="; color: #38BDF8"],.light .pg-experience [style^="color: #38BDF8"],.light .pg-experience [style*="; color: #FBBF77"],.light .pg-experience [style^="color: #FBBF77"],.light .pg-experience [style*="; color: #FDBA74"],.light .pg-experience [style^="color: #FDBA74"],.light .pg-experience [style*="; color: #F472B6"],.light .pg-experience [style^="color: #F472B6"],.light .pg-experience [style*="; color: #A78BFA"],.light .pg-experience [style^="color: #A78BFA"],.light .pg-experience [style*="; color: #22D3EE"],.light .pg-experience [style^="color: #22D3EE"],.light .pg-experience [style*="; color: #FACC15"],.light .pg-experience [style^="color: #FACC15"],.light .pg-experience [style*="; color: #86EFAC"],.light .pg-experience [style^="color: #86EFAC"],.light .pg-experience [style*="; color: #7DD3FC"],.light .pg-experience [style^="color: #7DD3FC"],.light .pg-experience [style*="; color: #C084FC"],.light .pg-experience [style^="color: #C084FC"],.light .pg-experience [style*="; color: #FB923C"],.light .pg-experience [style^="color: #FB923C"],.light .pg-experience [style*="; color: #93C5FD"],.light .pg-experience [style^="color: #93C5FD"],.light .pg-experience [style*="; color: #F87171"],.light .pg-experience [style^="color: #F87171"],.light .pg-experience [style*="; color: #34D399"],.light .pg-experience [style^="color: #34D399"]{filter:brightness(.6) saturate(1.5)}
 .pg-experience .eyebrow{font-family:var(--font-mono),monospace;font-size:13px;letter-spacing:.08em;color:var(--acc)}
 .pg-experience .h2{margin:0;font-size:56px;line-height:1.02;letter-spacing:-.04em;font-weight:700}
 .pg-experience .avail{display:inline-flex;align-items:center;gap:8px;padding:6px 12px;border-radius:999px;font-size:13px;color:#86EFAC;border:1px solid rgba(74,222,128,.3);background:rgba(74,222,128,.07)}
@@ -110,3 +109,27 @@
 .light .pg-experience .avail i{background:#16A34A}
 @media (max-width:1000px){.pg-experience .navlinks{display:none}
 .pg-experience .h2{font-size:38px}}
+@media (max-width:760px){.pg-experience section,.pg-experience footer{overflow-x:clip}
+.pg-experience .d-only{display:none}
+.pg-experience .h2{font-size:31px !important;line-height:1.08 !important;letter-spacing:-.035em}
+.pg-experience .eyebrow{font-size:11.5px}
+.pg-experience .foot{padding:40px 0 24px !important}
+.pg-experience .fcol:not(:last-child),.pg-experience .fword,.pg-experience .fbrand .avail,.pg-experience .fbrand p{display:none !important}
+.pg-experience .ftop{grid-template-columns:minmax(0,1fr) !important;gap:20px !important}
+.pg-experience .fcol:last-child{flex-direction:row;flex-wrap:wrap;gap:8px 16px !important}
+.pg-experience .fcol:last-child .mono{width:100%}
+.pg-experience .fbot{flex-direction:column;align-items:flex-start;padding-right:0 !important;gap:10px}
+.pg-experience a:active,.pg-experience button:active{opacity:.85}}
+@supports (animation-timeline: view()){@media (max-width:760px) and (prefers-reduced-motion:no-preference){.pg-experience .job,.pg-experience .lead > *,.pg-experience .integ > *,.pg-experience .live > *,.pg-experience .fstep,.pg-experience .mix{animation:pg-experience-mreveal linear both !important;animation-timeline:view() !important;animation-range:entry 0% cover 22% !important}
+@keyframes pg-experience-mreveal{from{opacity:0;transform:translateY(26px) scale(.98)}to{opacity:1;transform:none}}}}
+@media (max-width:760px){.pg-experience section{padding-top:56px !important;padding-bottom:56px !important}
+.pg-experience h1{font-size:40px !important;line-height:1.04 !important}
+.pg-experience .job{gap:12px !important;padding:28px 0 !important}
+.pg-experience .job h2{font-size:22px !important}
+.pg-experience .job ul{font-size:15px !important}
+.pg-experience .lgrid{grid-template-columns:minmax(0,1fr) !important;gap:0 !important}
+.pg-experience .lorb{height:250px !important;transform:scale(.78);margin:-10px 0 -20px}
+.pg-experience .lead{grid-template-columns:minmax(0,1fr) !important;gap:10px !important}
+.pg-experience .live{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:10px !important}
+.pg-experience #leadership,.pg-experience .lgrid{overflow-x:clip}
+.pg-experience .integ{grid-template-columns:minmax(0,1fr) !important}}

@@ -694,3 +694,67 @@
 @media (prefers-reduced-motion:reduce){.pg-main .up,.pg-main .blob,.pg-main .float,.pg-main .float2,.pg-main .marquee,.pg-main .shine,.pg-main .dot{animation:none !important;opacity:1}
 .pg-main .rot span{animation:none}
 .pg-main .rot span:first-child{opacity:1}}
+.pg-main .mprofile,.pg-main .hintro-m,.pg-main .swipehint{display:none}
+@media (max-width:760px){.pg-main section,.pg-main footer{overflow-x:clip}
+.pg-main .d-only{display:none}
+.pg-main section:not(#top){padding-top:56px !important;padding-bottom:56px !important}
+.pg-main #top{padding-top:20px !important;padding-bottom:32px !important;min-height:0 !important}
+.pg-main .h2,.pg-main .ctah{font-size:31px !important;line-height:1.08 !important;letter-spacing:-.035em}
+.pg-main .eyebrow{font-size:11.5px}
+.pg-main .hleft{gap:18px !important}
+.pg-main .mprofile{display:flex;align-items:center;gap:14px;padding:12px;border-radius:20px;background:rgba(var(--glass),.7);border:1px solid var(--c24242D);backdrop-filter:blur(10px)}
+.pg-main .mpav{position:relative;flex:none;width:62px;height:62px;border-radius:50%;padding:2.5px;background:conic-gradient(from 180deg,#8B8CFF,#0EA5E9,#4ADE80,#F5C451,#8B8CFF);animation:pg-main-mring 6s linear infinite}
+.pg-main .mpav img{display:block;width:100%;height:100%;border-radius:50%;object-fit:cover;object-position:center 18%;border:2px solid var(--c07070A)}
+@keyframes pg-main-mring{to{filter:hue-rotate(360deg)}}
+.pg-main .mpinfo{display:flex;flex-direction:column;gap:3px;min-width:0}
+.pg-main .mpinfo b{font-size:16.5px;letter-spacing:-.01em}
+.pg-main .mpinfo .mono{font-size:11.5px;color:var(--cC7C8FF)}
+.pg-main .mpopen{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--c86EFAC)}
+.pg-main .mpopen i{width:7px;height:7px;border-radius:50%;background:#4ADE80;box-shadow:0 0 0 0 rgba(74,222,128,.6);animation:pg-main-mping 2s infinite}
+@keyframes pg-main-mping{80%,100%{box-shadow:0 0 0 7px rgba(74,222,128,0)}}
+.light .pg-main .mpopen{color:#15803D}
+.pg-main .hbadges,.pg-main .hintro,.pg-main .hroles,.pg-main .hwa,.pg-main .hphoto{display:none !important}
+.pg-main .hero .h1{font-size:46px !important;line-height:1 !important}
+.pg-main .hintro-m{display:block;margin:0;font-size:16.5px;line-height:1.55;color:var(--cA1A1AA)}
+.pg-main .hctas{display:grid !important;grid-template-columns:1.15fr 1fr;gap:10px !important}
+.pg-main .hctas a{height:52px !important;padding:0 14px !important;justify-content:center;font-size:15.5px !important;border-radius:16px !important}
+.pg-main .proofbar{grid-template-columns:repeat(4,minmax(0,1fr)) !important;padding:6px 4px !important;border-radius:18px !important}
+.pg-main .proofitem{padding:10px 6px !important;gap:2px !important;align-items:center;text-align:center}
+.pg-main .proofitem+.proofitem{border-left:1px solid var(--c1F1F27) !important}
+.pg-main .proofitem span:first-child{font-size:21px !important}
+.pg-main .proofitem span:last-child{font-size:10.5px !important;line-height:1.25 !important}
+.pg-main .swipehint{display:block;font-size:11px;letter-spacing:.06em;color:var(--c6E6E78);margin:0 0 -8px}
+.pg-main .stairs,.pg-main .ninety,.pg-main .llmchips,.pg-main .cotabs{display:flex !important;flex-wrap:nowrap !important;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;overscroll-behavior-x:contain}
+.pg-main .stairs::-webkit-scrollbar,.pg-main .ninety::-webkit-scrollbar,.pg-main .llmchips::-webkit-scrollbar,.pg-main .cotabs::-webkit-scrollbar{display:none}
+.pg-main .stairs{gap:12px;margin:0 -20px;padding:4px 20px 8px;scroll-padding-left:20px}
+.pg-main .stair{flex:0 0 80%;scroll-snap-align:start;margin-top:0 !important}
+.pg-main .stair .cdot{display:none}
+.pg-main .cmap{padding:24px 0 0 !important}
+.pg-main .cmap .ladder{margin:20px 0 0 !important}
+.pg-main .ninety{gap:12px;margin:0 -16px;padding:4px 16px 8px !important;scroll-padding-left:16px}
+.pg-main .nstep{flex:0 0 84%;scroll-snap-align:start}
+.pg-main .llmchips{gap:8px;margin:0 -18px;padding:0 18px}
+.pg-main .llmc{flex:none;scroll-snap-align:start}
+.pg-main .llmstrip{flex-direction:column;align-items:stretch !important;gap:10px !important;overflow:hidden}
+.pg-main .cotabs{justify-content:flex-start !important;gap:8px !important;margin:0 -20px;padding:2px 20px 6px}
+.pg-main .cotab{flex:none;scroll-snap-align:start}
+.pg-main .dico{width:46px !important;height:46px !important;border-radius:15px !important}
+.pg-main .dpipe{gap:16px !important}
+.pg-main .dtrack{left:42px !important}
+.pg-main .story{min-height:500px !important}
+.pg-main .ctachans{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:10px !important}
+.pg-main .ctachans .cch:first-child{display:none}
+.pg-main .ctaleft .avail{display:none}
+.pg-main .cch{flex-direction:column;align-items:flex-start !important;gap:10px !important;padding:14px !important;border-radius:18px !important}
+.pg-main .ccht span,.pg-main .ccha{display:none}
+.pg-main .ctachans .cch:last-child{grid-column:1/-1;flex-direction:row;align-items:center !important}
+.pg-main .foot{padding:40px 0 24px !important}
+.pg-main .fcol:not(:last-child),.pg-main .fword,.pg-main .fbrand .avail,.pg-main .fbrand p{display:none !important}
+.pg-main .ftop{grid-template-columns:minmax(0,1fr) !important;gap:20px !important}
+.pg-main .fcol:last-child{flex-direction:row;flex-wrap:wrap;gap:8px 16px !important}
+.pg-main .fcol:last-child .mono{width:100%}
+.pg-main .fbot{flex-direction:column;align-items:flex-start;padding-right:0 !important;gap:10px}
+.pg-main .cta:active,.pg-main .ctab:active,.pg-main .cotab:active,.pg-main .mprofile:active{transform:scale(.97)}}
+@supports (animation-timeline: view()){@media (max-width:760px) and (prefers-reduced-motion:no-preference){.pg-main section:not(#top) .w > *,.pg-main .stair,.pg-main .nstep,.pg-main .airow,.pg-main .cch,.pg-main .lapcard{animation:pg-main-mreveal linear both !important;animation-timeline:view() !important;animation-range:entry 0% cover 22% !important}
+@keyframes pg-main-mreveal{from{opacity:0;transform:translateY(26px) scale(.98)}to{opacity:1;transform:none}}}}
+@media (prefers-reduced-motion:reduce){.pg-main .mpav,.pg-main .mpopen i{animation:none}}
