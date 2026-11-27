@@ -119,6 +119,33 @@
 .pg-journey .fcol:last-child{flex-direction:row;flex-wrap:wrap;gap:8px 16px !important}
 .pg-journey .fcol:last-child .mono{width:100%}
 .pg-journey .fbot{flex-direction:column;align-items:flex-start;padding-right:0 !important;gap:10px}
+.pg-journey h1{font-size:36px !important;line-height:1.06 !important;letter-spacing:-.035em !important}
+.pg-journey .hero .h1{font-size:40px !important}
+.pg-journey .act h1,.pg-journey .act h2,.pg-journey .big{font-size:32px !important;line-height:1.08 !important;letter-spacing:-.03em !important}
+.pg-journey h2,.pg-journey .h2,.pg-journey .ctah{font-size:26px !important;line-height:1.14 !important;letter-spacing:-.03em !important}
+.pg-journey h2 + p,.pg-journey .h2 + p,.pg-journey .ctah + p,.pg-journey h1 + p{font-size:15px !important;line-height:1.55 !important}
+.pg-journey .oneline{white-space:normal !important}
+.pg-journey .job h2{font-size:19px !important;line-height:1.25 !important}
+.pg-journey .stq{font-size:24px !important;line-height:1.18 !important}
+.pg-journey .lgstat .lgnum{font-size:54px !important}
+.pg-journey .aititle,.pg-journey .ptitle,.pg-journey .airt b{font-size:18px !important}
+.pg-journey .pcard[data-open="true"] .ptitle{font-size:22px !important}
+.pg-journey .mix span[style*="font-size: 26px"],.pg-journey .card span[style*="font-size: 26px"]{font-size:20px !important}
+.pg-journey .foot{padding:28px 0 18px !important;border-top:0 !important;background:radial-gradient(420px 220px at 50% 0%,rgba(139,140,255,.14),transparent 70%),var(--c07070A) !important}
+.pg-journey .ftop{gap:14px !important}
+.pg-journey .fbrand{align-items:center;text-align:center;padding:20px 16px;border-radius:22px;border:1px solid var(--c24242D);background:rgba(var(--glass),.6)}
+.pg-journey .fbrand > div:first-child{flex-direction:column;gap:10px !important}
+.pg-journey .fbrand > div:first-child img{width:64px !important;height:64px !important;box-shadow:0 0 0 3px var(--c07070A),0 0 0 5px rgba(139,140,255,.55)}
+.pg-journey .fbrand > div:first-child > div{align-items:center}
+.pg-journey .fbrand .avail{display:inline-flex !important;align-self:center !important}
+.pg-journey .fcol:last-child{display:grid !important;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px !important}
+.pg-journey .fcol:last-child .mono{grid-column:1/-1;text-align:center;margin:4px 0 2px !important}
+.pg-journey .fcol:last-child a{display:flex;align-items:center;justify-content:center;height:46px;border-radius:14px;border:1px solid var(--c24242D);background:rgba(var(--glass),.6);font-size:14px !important;font-weight:600;color:var(--cEDEDEF) !important}
+.pg-journey .fcol:last-child a:last-child{grid-column:1/-1;background:#8B8CFF;border-color:#8B8CFF;color:#0B0B12 !important}
+.pg-journey .fbot{align-items:center !important;text-align:center;border-top:0 !important;padding-top:18px !important;gap:8px !important;font-size:12px !important}
+.pg-journey .fbot .mono{font-size:11px !important;opacity:.8}
+.pg-journey .ftop-btn{order:-1;width:44px;height:44px;padding:0 !important;border-radius:50% !important;display:flex;align-items:center;justify-content:center;font-size:0 !important;margin-bottom:6px}
+.pg-journey .ftop-btn::before{content:"↑";font-size:18px;color:var(--cEDEDEF)}
 .pg-journey a:active,.pg-journey button:active{opacity:.85}}
 @supports (animation-timeline: view()){@media (max-width:760px) and (prefers-reduced-motion:no-preference){.pg-journey .ch,.pg-journey .photo,.pg-journey .brick{animation:pg-journey-mreveal linear both !important;animation-timeline:view() !important;animation-range:entry 0% cover 22% !important}
 @keyframes pg-journey-mreveal{from{opacity:0;transform:translateY(26px) scale(.98)}to{opacity:1;transform:none}}}}
@@ -130,3 +157,6 @@
 .pg-journey .brick{padding:11px 14px !important;font-size:13px !important}
 .pg-journey .tdots span{width:30px !important;height:30px !important;margin-right:-8px !important;border-width:2px !important}
 .pg-journey .photo{max-width:100% !important}}
+@media (max-width:760px){.pg-journey h1.h1,.pg-journey h1.h1.up,.pg-journey section h1{font-size:36px !important;line-height:1.06 !important}
+.pg-journey .hero h1.h1{font-size:40px !important}
+.pg-journey section.act h1,.pg-journey section.act h2,.pg-journey section.act .big,.pg-journey section h2.big{font-size:30px !important;line-height:1.1 !important}}

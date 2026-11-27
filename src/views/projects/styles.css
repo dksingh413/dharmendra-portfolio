@@ -137,6 +137,33 @@
 .pg-projects .fcol:last-child{flex-direction:row;flex-wrap:wrap;gap:8px 16px !important}
 .pg-projects .fcol:last-child .mono{width:100%}
 .pg-projects .fbot{flex-direction:column;align-items:flex-start;padding-right:0 !important;gap:10px}
+.pg-projects h1{font-size:36px !important;line-height:1.06 !important;letter-spacing:-.035em !important}
+.pg-projects .hero .h1{font-size:40px !important}
+.pg-projects .act h1,.pg-projects .act h2,.pg-projects .big{font-size:32px !important;line-height:1.08 !important;letter-spacing:-.03em !important}
+.pg-projects h2,.pg-projects .h2,.pg-projects .ctah{font-size:26px !important;line-height:1.14 !important;letter-spacing:-.03em !important}
+.pg-projects h2 + p,.pg-projects .h2 + p,.pg-projects .ctah + p,.pg-projects h1 + p{font-size:15px !important;line-height:1.55 !important}
+.pg-projects .oneline{white-space:normal !important}
+.pg-projects .job h2{font-size:19px !important;line-height:1.25 !important}
+.pg-projects .stq{font-size:24px !important;line-height:1.18 !important}
+.pg-projects .lgstat .lgnum{font-size:54px !important}
+.pg-projects .aititle,.pg-projects .ptitle,.pg-projects .airt b{font-size:18px !important}
+.pg-projects .pcard[data-open="true"] .ptitle{font-size:22px !important}
+.pg-projects .mix span[style*="font-size: 26px"],.pg-projects .card span[style*="font-size: 26px"]{font-size:20px !important}
+.pg-projects .foot{padding:28px 0 18px !important;border-top:0 !important;background:radial-gradient(420px 220px at 50% 0%,rgba(139,140,255,.14),transparent 70%),var(--c07070A) !important}
+.pg-projects .ftop{gap:14px !important}
+.pg-projects .fbrand{align-items:center;text-align:center;padding:20px 16px;border-radius:22px;border:1px solid var(--c24242D);background:rgba(var(--glass),.6)}
+.pg-projects .fbrand > div:first-child{flex-direction:column;gap:10px !important}
+.pg-projects .fbrand > div:first-child img{width:64px !important;height:64px !important;box-shadow:0 0 0 3px var(--c07070A),0 0 0 5px rgba(139,140,255,.55)}
+.pg-projects .fbrand > div:first-child > div{align-items:center}
+.pg-projects .fbrand .avail{display:inline-flex !important;align-self:center !important}
+.pg-projects .fcol:last-child{display:grid !important;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px !important}
+.pg-projects .fcol:last-child .mono{grid-column:1/-1;text-align:center;margin:4px 0 2px !important}
+.pg-projects .fcol:last-child a{display:flex;align-items:center;justify-content:center;height:46px;border-radius:14px;border:1px solid var(--c24242D);background:rgba(var(--glass),.6);font-size:14px !important;font-weight:600;color:var(--cEDEDEF) !important}
+.pg-projects .fcol:last-child a:last-child{grid-column:1/-1;background:#8B8CFF;border-color:#8B8CFF;color:#0B0B12 !important}
+.pg-projects .fbot{align-items:center !important;text-align:center;border-top:0 !important;padding-top:18px !important;gap:8px !important;font-size:12px !important}
+.pg-projects .fbot .mono{font-size:11px !important;opacity:.8}
+.pg-projects .ftop-btn{order:-1;width:44px;height:44px;padding:0 !important;border-radius:50% !important;display:flex;align-items:center;justify-content:center;font-size:0 !important;margin-bottom:6px}
+.pg-projects .ftop-btn::before{content:"↑";font-size:18px;color:var(--cEDEDEF)}
 .pg-projects a:active,.pg-projects button:active{opacity:.85}}
 @supports (animation-timeline: view()){@media (max-width:760px) and (prefers-reduced-motion:no-preference){.pg-projects .pcard{animation:pg-projects-mreveal linear both !important;animation-timeline:view() !important;animation-range:entry 0% cover 22% !important}
 @keyframes pg-projects-mreveal{from{opacity:0;transform:translateY(26px) scale(.98)}to{opacity:1;transform:none}}}}
@@ -149,3 +176,6 @@
 .pg-projects .ptitle{font-size:20px !important}
 .pg-projects .pcard[data-open="true"] .ptitle{font-size:24px !important}
 .pg-projects .phi{padding:12px 10px !important}}
+@media (max-width:760px){.pg-projects h1.h1,.pg-projects h1.h1.up,.pg-projects section h1{font-size:36px !important;line-height:1.06 !important}
+.pg-projects .hero h1.h1{font-size:40px !important}
+.pg-projects section.act h1,.pg-projects section.act h2,.pg-projects section.act .big,.pg-projects section h2.big{font-size:30px !important;line-height:1.1 !important}}
