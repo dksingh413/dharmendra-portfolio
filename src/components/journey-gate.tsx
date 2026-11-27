@@ -4,14 +4,8 @@ import Link from 'next/link'
 import { useEffect, useRef, useState, useSyncExternalStore, type FormEvent, type ReactNode } from 'react'
 
 const KEY = 'journey-unlocked'
-// SHA-256 of the lower-cased code, so the code itself is not shipped as plain text.
-const CODE_HASH = '9204da21e0ac29b501203c4afe007cad86b58528852e9b039ace470778fe1042'
-
-async function sha256(text: string) {
-  const data = new TextEncoder().encode(text)
-  const buf = await crypto.subtle.digest('SHA-256', data)
-  return Array.from(new Uint8Array(buf), (b) => b.toString(16).padStart(2, '0')).join('')
-}
+// Codes that open the film.
+const CODES = ['dadimaa', 'Dadimaa']
 
 function subscribe(onChange: () => void) {
   window.addEventListener('storage', onChange)
@@ -30,7 +24,6 @@ export function JourneyGate({ children }: { children: ReactNode }) {
   const stored = useSyncExternalStore(subscribe, readStored, () => false)
   const [unlockedNow, setUnlockedNow] = useState(false)
   const [error, setError] = useState(false)
-  const [busy, setBusy] = useState(false)
   const inputRef = useRef<HTMLInputElement>(null)
   const open = stored || unlockedNow
 
@@ -45,14 +38,11 @@ export function JourneyGate({ children }: { children: ReactNode }) {
     }
   }, [open])
 
-  async function onSubmit(e: FormEvent<HTMLFormElement>) {
+  function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault()
     const value = new FormData(e.currentTarget).get('code')
     if (typeof value !== 'string' || !value.trim()) return
-    setBusy(true)
-    const ok = (await sha256(value.trim().toLowerCase())) === CODE_HASH
-    setBusy(false)
-    if (ok) {
+    if (CODES.includes(value.trim())) {
       try {
         sessionStorage.setItem(KEY, '1')
       } catch {
@@ -104,8 +94,8 @@ export function JourneyGate({ children }: { children: ReactNode }) {
                 That&apos;s not it. Try again.
               </span>
             ) : null}
-            <button type="submit" className="jg-btn" disabled={busy}>
-              {busy ? 'Opening…' : 'Open the film'}
+            <button type="submit" className="jg-btn">
+              Open the film
             </button>
             <Link href="/" className="jg-back">
               ← Back to home
