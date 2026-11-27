@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import JourneyView from '@/views/journey/View'
+import { JourneyGate } from '@/components/journey-gate'
 
 export const metadata: Metadata = {
   title: 'My story',
@@ -8,5 +9,9 @@ export const metadata: Metadata = {
 }
 
 export default function Page() {
-  return <JourneyView />
+  return (
+    <JourneyGate>
+      <JourneyView />
+    </JourneyGate>
+  )
 }

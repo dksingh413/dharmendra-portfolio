@@ -84,3 +84,43 @@ img[loading='lazy'] {
 @media (prefers-reduced-motion: reduce) {
   .skel { animation: none; }
 }
+
+/* My story: code gate */
+.jg-locked { filter: blur(14px) brightness(0.45); pointer-events: none; user-select: none; }
+.jg {
+  position: fixed; inset: 0; z-index: 90; display: flex; align-items: center; justify-content: center;
+  padding: 20px; background: radial-gradient(500px 340px at 50% 40%, rgba(245, 158, 11, 0.14), transparent 70%), rgba(5, 5, 10, 0.72);
+  backdrop-filter: blur(6px);
+}
+.jg-card {
+  width: 100%; max-width: 400px; display: flex; flex-direction: column; align-items: center; gap: 12px;
+  padding: 30px 24px 24px; border-radius: 26px; text-align: center; color: #ededef;
+  background: rgba(15, 15, 22, 0.92); border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.6), 0 0 60px rgba(245, 158, 11, 0.12);
+}
+.jg-diya { width: 84px; }
+.jg-flame { transform-box: fill-box; transform-origin: 50% 100%; animation: jg-flame 1.6s ease-in-out infinite; }
+.jg-kicker { font-family: var(--font-mono), monospace; font-size: 11px; letter-spacing: 0.2em; color: #f5c451; }
+.jg-title { margin: 0; font-size: 24px; line-height: 1.2; letter-spacing: -0.02em; }
+.jg-text { margin: 0 0 6px; font-size: 15px; color: #a1a1aa; }
+.jg-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+.jg-input {
+  box-sizing: border-box;
+  width: 100%; height: 52px; padding: 0 16px; border-radius: 14px; font: inherit; font-size: 16px; text-align: center;
+  letter-spacing: 0.12em; color: #ededef; background: #0b0b10; border: 1px solid rgba(255, 255, 255, 0.14); outline: none;
+}
+.jg-input:focus { border-color: #f5c451; box-shadow: 0 0 0 4px rgba(245, 196, 81, 0.15); }
+.jg-err { border-color: #f87171; animation: jg-shake 0.4s ease; }
+.jg-errtext { font-size: 13px; color: #fca5a5; }
+.jg-btn {
+  box-sizing: border-box;
+  width: 100%; height: 52px; margin-top: 4px; border: 0; border-radius: 14px; font: inherit; font-size: 16px; font-weight: 700;
+  color: #0b0b12; background: linear-gradient(90deg, #f5c451, #8b8cff); cursor: pointer;
+}
+.jg-btn:disabled { opacity: 0.7; }
+.jg-back { margin-top: 4px; font-size: 14px; color: #a1a1aa; text-decoration: none; }
+@keyframes jg-flame { 50% { transform: scaleY(1.12) scaleX(0.92); } }
+@keyframes jg-shake { 20%, 60% { transform: translateX(-8px); } 40%, 80% { transform: translateX(8px); } }
+@media (prefers-reduced-motion: reduce) {
+  .jg-flame, .jg-err { animation: none; }
+}
