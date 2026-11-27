@@ -204,7 +204,7 @@
 @keyframes pg-journey-tw{0%,100%{opacity:.15}50%{opacity:1}}
 .pg-journey .moon{position:absolute;right:12%;top:14%;width:70px;height:70px;border-radius:50%;background:#FFF3D1;box-shadow:0 0 60px rgba(255,243,209,.5)}
 .pg-journey .lampwin{animation:pg-journey-flick 3s ease-in-out infinite}
-.pg-journey .lantern{animation:pg-journey-flick 2.4s ease-in-out infinite;transform-origin:215px 196px}
+.pg-journey .lantern{animation:pg-journey-flick 2.4s ease-in-out infinite;transform-origin:243px 214px}
 @keyframes pg-journey-flick{50%{opacity:.75}}
 .pg-journey .dadi{animation:pg-journey-sway 5s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 100%}
 @keyframes pg-journey-sway{50%{transform:rotate(1.2deg)}}
