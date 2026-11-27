@@ -696,6 +696,8 @@
 .pg-main .rot span:first-child{opacity:1}}
 .pg-main .mprofile,.pg-main .hintro-m,.pg-main .swipehint{display:none}
 @media (max-width:760px){.pg-main section,.pg-main footer{overflow-x:clip}
+.pg-main section:not(#top):not(.act:first-of-type){content-visibility:auto;contain-intrinsic-size:auto 900px}
+.pg-main .blob,.pg-main .aibg,.pg-main .gridbg{display:none !important}
 .pg-main .d-only{display:none}
 .pg-main section:not(#top){padding-top:56px !important;padding-bottom:56px !important}
 .pg-main #top{padding-top:20px !important;padding-bottom:32px !important;min-height:0 !important}

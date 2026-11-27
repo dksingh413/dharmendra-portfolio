@@ -122,6 +122,8 @@
 @media (max-width:1000px){.pg-projects .navlinks{display:none}
 .pg-projects .h2{font-size:38px}}
 @media (max-width:760px){.pg-projects section,.pg-projects footer{overflow-x:clip}
+.pg-projects section:not(#top):not(.act:first-of-type){content-visibility:auto;contain-intrinsic-size:auto 900px}
+.pg-projects .blob,.pg-projects .aibg,.pg-projects .gridbg{display:none !important}
 .pg-projects .d-only{display:none}
 .pg-projects .h2{font-size:31px !important;line-height:1.08 !important;letter-spacing:-.035em}
 .pg-projects .eyebrow{font-size:11.5px}

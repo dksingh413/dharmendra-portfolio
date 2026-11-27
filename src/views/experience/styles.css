@@ -110,6 +110,8 @@
 @media (max-width:1000px){.pg-experience .navlinks{display:none}
 .pg-experience .h2{font-size:38px}}
 @media (max-width:760px){.pg-experience section,.pg-experience footer{overflow-x:clip}
+.pg-experience section:not(#top):not(.act:first-of-type){content-visibility:auto;contain-intrinsic-size:auto 900px}
+.pg-experience .blob,.pg-experience .aibg,.pg-experience .gridbg{display:none !important}
 .pg-experience .d-only{display:none}
 .pg-experience .h2{font-size:31px !important;line-height:1.08 !important;letter-spacing:-.035em}
 .pg-experience .eyebrow{font-size:11.5px}
