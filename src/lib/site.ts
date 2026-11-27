@@ -18,7 +18,7 @@ const mailto = `mailto:${profile.email}`
 
 export const SITE = {
   ...profile,
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://dharmendra-portfolio.vercel.app',
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://dharmendrasingh-portfolio.vercel.app',
   description:
     'Senior Software Engineer (AI) with 9 years shipping production web platforms: React, Next.js, Node.js, AWS, LLM apps and chatbots. Ex-team lead of 12+.',
 }
