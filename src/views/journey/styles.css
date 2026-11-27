@@ -104,6 +104,10 @@
 @media (max-width:1000px){.pg-journey .navlinks{display:none}
 .pg-journey .h2{font-size:38px}}
 @media (max-width:760px){.pg-journey section,.pg-journey footer{overflow-x:clip}
+.pg-journey .hdrin > a:first-child img{display:none !important}
+.pg-journey .hdrin > a:first-child > span{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:12px;font-size:0 !important;background:radial-gradient(circle at 80% 15%,rgba(139,140,255,.45),transparent 65%),var(--c111116);border:1px solid var(--c24242D)}
+.pg-journey .hdrin > a:first-child > span::before{content:"D";font-size:19px;font-weight:800;letter-spacing:-.04em;color:var(--cEDEDEF)}
+.pg-journey .hdrin > a:first-child > span > span{font-size:19px !important;font-weight:800;line-height:1}
 .pg-journey section:not(#top):not(.act:first-of-type){content-visibility:auto;contain-intrinsic-size:auto 900px}
 .pg-journey .blob,.pg-journey .aibg,.pg-journey .gridbg{display:none !important}
 .pg-journey .d-only{display:none}

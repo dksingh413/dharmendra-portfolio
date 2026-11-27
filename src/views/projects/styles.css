@@ -122,6 +122,10 @@
 @media (max-width:1000px){.pg-projects .navlinks{display:none}
 .pg-projects .h2{font-size:38px}}
 @media (max-width:760px){.pg-projects section,.pg-projects footer{overflow-x:clip}
+.pg-projects .hdrin > a:first-child img{display:none !important}
+.pg-projects .hdrin > a:first-child > span{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:12px;font-size:0 !important;background:radial-gradient(circle at 80% 15%,rgba(139,140,255,.45),transparent 65%),var(--c111116);border:1px solid var(--c24242D)}
+.pg-projects .hdrin > a:first-child > span::before{content:"D";font-size:19px;font-weight:800;letter-spacing:-.04em;color:var(--cEDEDEF)}
+.pg-projects .hdrin > a:first-child > span > span{font-size:19px !important;font-weight:800;line-height:1}
 .pg-projects section:not(#top):not(.act:first-of-type){content-visibility:auto;contain-intrinsic-size:auto 900px}
 .pg-projects .blob,.pg-projects .aibg,.pg-projects .gridbg{display:none !important}
 .pg-projects .d-only{display:none}
